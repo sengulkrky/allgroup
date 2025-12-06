@@ -1,0 +1,28 @@
+[
+  {
+    "id": "frontend-developer",
+    "titel": "Frontend Developer",
+    "locatie": "Antwerpen",
+    "type": "Full-time",
+    "kort": "We zoeken een creatieve frontend developer met ervaring in HTML, CSS en JavaScript.",
+    "beschrijving": "Je werkt aan moderne websites met een focus op performance en design. Je werkt samen met designers en backend developers...",
+    "vereisten": [
+      "Goede kennis van HTML, CSS en JavaScript",
+      "Ervaring met responsive design",
+      "Teamplayer en communicatief sterk"
+    ]
+  },
+  {
+    "id": "it-support",
+    "titel": "IT Support Medewerker",
+    "locatie": "Gent",
+    "type": "Part-time",
+    "kort": "Help klanten met technische problemen en zorg voor een geweldige service.",
+    "beschrijving": "Je staat klanten te woord via telefoon, mail of onsite. Je analyseert problemen en lost ze snel op...",
+    "vereisten": [
+      "Basiskennis Windows en netwerkbeheer",
+      "Klantvriendelijk en oplossingsgericht",
+      "Stressbestendig"
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+:root {
+    --font: "Montserrat", "Segoe UI", Arial, sans-serif;
+    --bg-primary: #fff;
+    --bg-secondary: #f4f4f4;
+    --text-primary: #000000;
+    --text-secondary: #fff ;
+    --accent: #25AEBA;
+    --accent-keywords: #001830;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--bg-secondary);
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(37, 174, 186, 0.28);
+    padding: 0 15px;
+    width: 400px;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(37, 174, 186, 0.38);
+    }
+}
+
+.card h2 {
+    font-size: 1.2rem;
+}
+
+.card span {
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.niveau {
+    background-color: #deb4ff;
+    color: #5F3D7D;
+}
+
+.time {
+    background-color: #bff3d9;
+    color: green;
+}
+
+.remote {
+    background-color: rgb(248, 223, 175);
+    color: rgb(141, 96, 12);
+}
