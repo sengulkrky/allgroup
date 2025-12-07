@@ -84,7 +84,7 @@ main {
 }
 
 .logo {
-    height: 45px;
+    height: 50px;
 }
 
 @media (min-width: 768px) {
@@ -153,7 +153,7 @@ main {
     white-space: nowrap;
     align-items: center;
     gap: 40px;
-    font-size: 0.55rem;
+    font-size: 0.8rem;
 }
 
 .keywords li {
@@ -179,6 +179,24 @@ main {
     overflow: hidden;
     padding: 2px 0;
     background-color: var(--accent);
+}
+
+.home-content {
+    max-width: 85vw;
+    margin: auto;
+}
+
+/* Introduction */
+.intro-title {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.intro p {
+    padding-left: 5px;
+    border-left: 2px solid #25adba4f;
 }
 
 /* Jobs */
