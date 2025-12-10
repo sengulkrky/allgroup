@@ -2,8 +2,10 @@
     --font: "Montserrat", "Segoe UI", Arial, sans-serif;
     --bg-primary: #fff;
     --bg-secondary: #F4F4F4;
+    --bg-footer: #02021E;
     --text-primary: #000000;
     --text-secondary: #fff ;
+    --text-footer: #c7c4c4;
     --accent: #25AEBA;
     --accent-keywords: #001830;
 }
@@ -47,6 +49,7 @@ main {
 }
 
 .nav {
+    z-index: 9999;
     display: none;  
     position: absolute;
     top: 80px;
@@ -207,9 +210,60 @@ main {
 
 /* Footer */
 footer {
-    background-color: var(--accent-keywords);
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    padding: 10px 10px;
+    width: 100%;
+    background-color: var(--bg-footer);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 1.2rem;
+    width: 100%;
+    max-width: 700px;
+    padding: 0 1.5rem;
+}
+
+.footer-logo {
+    height: 70px;
+    width: auto;
+}
+
+.footer-company {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.footer-nav ul {
+    list-style: none;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+}
+
+.footer-nav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 38px 38px 147px 38px;
+    padding: 0.6rem 3rem;
+    text-decoration: none;
+    color: var(--text-footer);
+}
+
+.footer-copyright {
+    font-size: 0.85rem;
+    color: var(--text-footer);
+    margin-top: 0.5rem;
 }
