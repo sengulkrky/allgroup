@@ -1,40 +1,138 @@
 <?php
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: /nl/contact.html');
-    exit;
+// ----------------------------------------
+//  SECURITY & VALIDATION
+// ----------------------------------------
+
+if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+    die("Invalid request.");
 }
 
-$name = trim($_POST['name'] ?? '');
-$email = trim($_POST['email'] ?? '');
+// Max file size (5MB)
+$maxFileSize = 5 * 1024 * 1024;
+
+// Allow only PDF
+function isValidPDF($file) {
+    return isset($file['type']) && $file['type'] === 'application/pdf';
+}
+
+// ----------------------------------------
+//  RETRIEVE FORM FIELDS
+// ----------------------------------------
+
+$name    = trim($_POST['name'] ?? '');
+$email   = trim($_POST['email'] ?? '');
 $message = trim($_POST['message'] ?? '');
 
-// Basic validatie
 if ($name === '' || $email === '' || $message === '') {
-    die("Fout: alle velden zijn verplicht.");
+    die("Required fields are missing.");
 }
 
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    die("Fout: ongeldig e-mailadres.");
+// ----------------------------------------
+//  FILE HANDLING
+// ----------------------------------------
+
+$cvFile         = $_FILES['cv'] ?? null;
+$motivationFile = $_FILES['motivation'] ?? null;
+
+$attachments = [];
+
+// ---- CV (required) ----
+if (!$cvFile || $cvFile['error'] !== UPLOAD_ERR_OK) {
+    die("CV upload is verplicht.");
 }
 
-// Email naar je oom
-$naar = "sengul.krky03@gmail.com"; // <-- HIER aanpassen
-$onderwerp = "Nieuw bericht via contactformulier";
-$inhoud = "
-Naam: $name
-Email: $email
+if ($cvFile['size'] > $maxFileSize) {
+    die("CV is te groot. Max 5MB.");
+}
 
-Bericht:
-$message
-";
+if (!isValidPDF($cvFile)) {
+    die("CV moet een PDF zijn.");
+}
 
-$headers = "From: $email\r\n";
-$headers .= "Reply-To: $email\r\n";
+$attachments[] = $cvFile;
 
-// Verzenden
-mail($naar, $onderwerp, $inhoud, $headers);
 
-// Doorsturen naar ‘bedankt’-pagina
-header('Location: /nl/bedankt.html');
-exit;
+// ---- Motivation letter (optional) ----
+if ($motivationFile && $motivationFile['error'] === UPLOAD_ERR_OK) {
+
+    if ($motivationFile['size'] > $maxFileSize) {
+        die("Motivatiebrief is te groot. Max 5MB.");
+    }
+
+    if (!isValidPDF($motivationFile)) {
+        die("Motivatiebrief moet een PDF zijn.");
+    }
+
+    $attachments[] = $motivationFile;
+}
+
+
+// ----------------------------------------
+//  BUILD EMAIL
+// ----------------------------------------
+
+$to = "info@allgroup.be";  // <-- VERANDER DIT NAAR JUIST ADRES
+$subject = "Nieuwe contactaanvraag - $name";
+
+$boundary = md5(time());
+$headers = "From: {$email}\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: multipart/mixed; boundary=\"{$boundary}\"\r\n";
+
+
+// Email body START
+$body  = "--{$boundary}\r\n";
+$body .= "Content-Type: text/plain; charset=UTF-8\r\n\r\n";
+
+$body .= "Naam: $name\n";
+$body .= "E-mail: $email\n\n";
+$body .= "Bericht:\n$message\n\n";
+
+
+// ATTACHMENTS
+foreach ($attachments as $file) {
+
+    $fileContent = chunk_split(base64_encode(file_get_contents($file['tmp_name'])));
+    $fileName    = basename($file['name']);
+
+    $body .= "--{$boundary}\r\n";
+    $body .= "Content-Type: application/pdf; name=\"{$fileName}\"\r\n";
+    $body .= "Content-Disposition: attachment; filename=\"{$fileName}\"\r\n";
+    $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
+    $body .= $fileContent . "\r\n";
+}
+
+$body .= "--{$boundary}--";
+
+
+// ----------------------------------------
+//  SEND EMAIL
+// ----------------------------------------
+
+$mailSent = mail($to, $subject, $body, $headers);
+
+
+// ----------------------------------------
+//  LANGUAGE DETECTION + REDIRECT
+// ----------------------------------------
+
+// Find which page the user came from
+$referer = $_SERVER['HTTP_REFERER'] ?? '';
+$language = 'nl'; // default
+
+if (strpos($referer, '/fr/') !== false) {
+    $language = 'fr';
+} elseif (strpos($referer, '/en/') !== false) {
+    $language = 'en';
+}
+
+// Redirect to success page per language
+if ($mailSent) {
+    header("Location: /$language/success.html");
+    exit;
+} else {
+    die("Er ging iets mis bij het verzenden van de e-mail.");
+}
+
+?>

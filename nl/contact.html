@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Amatic+SC:wght@400;700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/global.css">
-    <link rel="stylesheet" href="../assets/css/contact.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <title>Contact</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
         </button>
         <nav class="nav" id="nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="diensten.html">Diensten</a></li>
                 <li><a href="overons.html">Over ons</a></li>
                 <li><a href="vacatures.html">Jobs</a></li>
@@ -29,39 +29,71 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="form">
-                <h2>Contacteer ons</h2>
-                <form action="/backend/contact/send-email.php" method="post" class="contact-form">
-                    <label for="name">Naam</label>
+        <section class="contact-hero">
+            <h1>Neem contact op</h1>
+            <p>Heb je vragen of wil je samenwerken? Wij horen graag van je.</p>
+        </section>
+        <section class="contact-content">
+            <form class="contact-form" action="/backend/contact/send-mail.php" method="POST" enctype="multipart/form-data">
+                <div class="field">
                     <input type="text" id="name" name="name" required>
-                    <label for="email">Uw e-mailadres</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Uw bericht</label>
-                    <textarea name="message" id="message" rows="6" required></textarea>
-                    <button type="submit">Verzenden</button>
-                </form>
-            </div>
-            <div class="contact-details">
-                <h2>Onze contactgegevens</h2>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#25AEBA"><path d="M480.21-480Q510-480 531-501.21t21-51Q552-582 530.79-603t-51-21Q450-624 429-602.79t-21 51Q408-522 429.21-501t51 21ZM480-191q119-107 179.5-197T720-549q0-105-68.5-174T480-792q-103 0-171.5 69T240-549q0 71 60.5 161T480-191Zm0 95Q323.03-227.11 245.51-339.55 168-452 168-549q0-134 89-224.5T479.5-864q133.5 0 223 90.5T792-549q0 97-77 209T480-96Zm0-456Z"/></svg>
-                    <span>Rubensstraat 10, 1030 Schaerbeek</span>
+                    <label for="name">Naam</label>
                 </div>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#25AEBA"><path d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z"/></svg>
+
+                <div class="field">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">E-mailadres</label>
+                </div>
+
+                <div class="field textarea-field">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Uw bericht</label>
+                </div>
+                <div class="file-field">
+                    <label for="cv">CV (PDF)</label>
+                    <div class="file-upload-wrapper">
+                        <input type="file" id="cv" name="cv" accept="application/pdf" required>
+                        <button type="button" class="file-btn">Upload PDF</button>
+                        <span class="file-name">Geen bestand gekozen</span>
+                    </div>
+                </div>
+
+                <div class="file-field">
+                    <label for="motivation">Motivatiebrief (PDF)</label>
+
+                    <div class="file-upload-wrapper">
+                        <input type="file" id="motivation" name="motivation" accept="application/pdf">
+                        <button type="button" class="file-btn">Upload PDF</button>
+                        <span class="file-name">Geen bestand gekozen</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="send-btn">Verzenden</button>
+            </form>
+            <div class="contact-info">
+                <h2>Contactgegevens</h2>
+
+                <div class="info-line">
+                    <span class="info-icon">📍</span>
+                    <span>Rubensstraat 10, 1030 Schaarbeek</span>
+                </div>
+
+                <div class="info-line">
+                    <span class="info-icon">📞</span>
                     <span>0472 09 56 53</span>
                 </div>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#25AEBA"><path d="M168-192q-29.7 0-50.85-21.16Q96-234.32 96-264.04v-432.24Q96-726 117.15-747T168-768h624q29.7 0 50.85 21.16Q864-725.68 864-695.96v432.24Q864-234 842.85-213T792-192H168Zm312-240L168-611v347h624v-347L480-432Zm0-85 312-179H168l312 179Zm-312-94v-85 432-347Z"/></svg>
+
+                <div class="info-line">
+                    <span class="info-icon">✉️</span>
                     <span>info@allgroup.be</span>
                 </div>
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#25AEBA"><path d="M144-144v-528h144v-144h360v288h168v384H528v-144h-96v144H144Zm72-72h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm144 156h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm144 300h72v-72h-72v72Zm0-156h72v-72h-72v72Zm0-144h72v-72h-72v72Zm168 456h72v-72h-72v72Zm0-156h72v-72h-72v72Z"/></svg>
-                    <span>TVA BE 1008.336.279</span>
+
+                <div class="info-line">
+                    <span class="info-icon">🏢</span>
+                    <span>BTW BE 1008.336.279</span>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer-content">
@@ -81,5 +113,6 @@
     </footer>
 <script src="../assets/js/nav.js"></script>
 <script src="../assets/js/scroll.js"></script>
+<script src="../assets/js/filename.js"></script>
 </body>
 </html>
