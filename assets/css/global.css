@@ -32,7 +32,6 @@ main {
     margin: 0 auto;
 }
 
-/* Navbar */
 .header {
     display: flex;
     justify-content: space-between;
@@ -79,7 +78,7 @@ main {
 
     &:hover {
         color: var(--accent);
-    }
+    }                        
 }
 
 .nav-menu-open {
@@ -119,96 +118,6 @@ main {
     }
 }
 
-
-/* Hero */
-.hero {
-    background-image: url(images/hero.jpg);
-    background-size: cover;
-    background-position: center;
-
-    min-height: 30vh;
-    display: flex;
-    align-items: center;
-}
-
-.hero h1 {
-    color: var(--text-secondary);
-    font-weight: 400;
-    line-height: 50px;
-}
-
-.hero span {
-    background-color: var(--accent);
-    color: var(--text-primary);
-    border-radius: 30px;
-    padding: 0 6px;
-}
-
-.hero-content {
-    display: flex;
-    text-align: center;
-}
-
-/* Keywords */
-.keywords {
-    list-style: none;
-    display: flex;
-    white-space: nowrap;
-    align-items: center;
-    gap: 40px;
-    font-size: 0.8rem;
-}
-
-.keywords li {
-    line-height: 0.6;
-}
-
-.keywords li::after {
-    content: "";
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    margin-left: 40px;
-    vertical-align: middle;
-
-    background-image: url(icons/asterisk.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-
-}
-
-.keywords-band {
-    width: 100%;
-    overflow: hidden;
-    padding: 2px 0;
-    background-color: var(--accent);
-}
-
-.home-content {
-    max-width: 85vw;
-    margin: auto;
-}
-
-/* Introduction */
-.intro-title {
-    font-size: 1.6rem;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.5px;
-}
-
-.intro p {
-    padding-left: 5px;
-    border-left: 2px solid #25adba4f;
-}
-
-/* Jobs */
-.content-jobs {
-    margin: 0 auto;
-    max-width: 80vw;
-}
-
-/* Footer */
 footer {
     width: 100%;
     background-color: var(--bg-footer);
