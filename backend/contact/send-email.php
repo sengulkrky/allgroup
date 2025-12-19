@@ -72,7 +72,7 @@ if ($motivationFile && $motivationFile['error'] === UPLOAD_ERR_OK) {
 //  BUILD EMAIL
 // ----------------------------------------
 
-$to = "info@allgroup.be";  // <-- VERANDER DIT NAAR JUIST ADRES
+$to = "sengul.krky03@gmail.com";  // <-- VERANDER DIT NAAR JUIST ADRES
 $subject = "Nieuwe contactaanvraag - $name";
 
 $boundary = md5(time());
