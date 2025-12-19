@@ -1,5 +1,5 @@
 :root {
-    --font: "Alumni Sans Pinstripe","Montserrat", "Segoe UI", Arial, sans-serif;
+    --font: "Lato","Montserrat", Arial, sans-serif;
     --bg-primary: #fff;
     --bg-secondary: #F4F4F4;
     --bg-footer: #02021E;
@@ -72,8 +72,7 @@ main {
 .nav a {
     text-decoration: none;
     color: #0f2e4e;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.3rem;
 
     &:hover {
         color: var(--accent);
@@ -143,14 +142,12 @@ footer {
 }
 
 .footer-company {
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 1.6rem;
     color: var(--text-secondary);
 }
 
 .footer-nav ul {
     list-style: none;
-    font-weight: 600;
     padding: 0;
     margin: 0;
     display: flex;
@@ -160,7 +157,7 @@ footer {
 }
 
 .footer-nav a {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     display: block;
     width: 100%;
     height: 100%;
@@ -172,7 +169,7 @@ footer {
 }
 
 .footer-copyright {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--text-footer);
     margin-top: 0.5rem;
 }
