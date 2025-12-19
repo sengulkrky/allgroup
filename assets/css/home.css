@@ -73,7 +73,7 @@
 }
 
 .aboutus-section p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
@@ -146,10 +146,14 @@
     padding: 1rem;
 }
 
-.jobs-title {
+.title {
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
     font-weight: 600;
+}
+
+.subtext {
+    font-size: 1.2rem;
 }
 
 .jobs-scroller{
@@ -168,7 +172,7 @@
 .jobs-card {
     flex: 0 0 80%;
     scroll-snap-align: start;
-    background-color: var(--accent);
+    background-color: #25adbab6;
     color: var(--text-primary);
     border-radius: 14px;
     padding: 1rem;
@@ -179,10 +183,6 @@
     margin: 0 0 0.25rem 0;
     font-size: 1.3rem;
     font-weight: 600;
-}
-
-.jobs-subtext {
-    font-size: 1.3rem;
 }
 
 .job-meta {
@@ -203,3 +203,38 @@
     background-color: #f9f9f9;
 }
 
+/* Contact */
+.contact {
+    width: 100%;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.contact-content {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 1.2rem;
+}
+
+.contact-subtext {
+    font-size: 1.05rem;
+    color: var(--text-footer);
+}
+
+.contact-btn {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+.layered-waves {
+    display: block;
+    margin-top: 50px;
+    width: 100%;
+}
