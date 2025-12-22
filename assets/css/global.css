@@ -21,6 +21,7 @@ body {
 
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 main {
@@ -204,7 +205,7 @@ footer {
 
 .layered-waves {
     display: block;
-    width: 101%;
-    margin-left: -0.5%;
-    margin-top: 20px;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    overflow-x: hidden;
 }
