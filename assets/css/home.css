@@ -136,9 +136,10 @@
 }
 
 .wave {
-    margin-left: -0.5%;
-    width: 101%;
     display: block;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    overflow-x: hidden;
 }
 
 /* Jobs Scroller */
