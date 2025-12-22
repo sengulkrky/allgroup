@@ -16,8 +16,9 @@ h2 {
 .form,
 .contact-details {
     background-color: var(--bg-secondary);
-    padding: 2px 10px 10px 10px;
+    padding: 2px 10px 0 10px;
     margin: 10px;
+    margin-bottom: 0;
     border-radius: 5px;
 }
 
