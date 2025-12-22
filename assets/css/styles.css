@@ -1,19 +1,19 @@
-.contact-hero {
-    padding: 2.5rem 1.5rem 1rem;
-    text-align: center;
+.contact-hero{
+  padding: 3.5rem 1.5rem 1.5rem;
+  text-align: center;
+  background: radial-gradient(900px 300px at 50% 0%, rgba(37,174,186,0.20), transparent 60%);
 }
 
-.contact-hero h1 {
-    font-size: 2.1rem;
-    font-weight: 700;
-    color: #0F2E4E;
-    margin-bottom: 0.4rem;
+.contact-hero h1{
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  letter-spacing: -0.02em;
 }
 
-.contact-hero p {
-    font-size: 1rem;
-    color: #475569;
+.contact-hero p{
+  max-width: 58ch;
+  margin: 0.35rem auto 0;
 }
+
 
 .contact-content {
     padding: 1rem 1.5rem 3rem;
@@ -137,22 +137,18 @@
     cursor: pointer;
 }
 
-.file-btn {
-    padding: .45rem .9rem;
-    font-size: .85rem;
-    font-weight: 500;
-    background: #F0F2F5;
-    border: 1px solid #CBD5E1;
-    border-radius: 6px;
-    color: #0F2E4E;
-    cursor: pointer;
-    transition: .2s;
+.file-btn{
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #25AEBA;
+  color: #0F2E4E;
 }
 
-.file-btn:hover {
-    background: #E5E7EB;
-    border-color: #94A3B8;
+.file-btn:hover{
+  background: rgba(37,174,186,0.08);
+  border-color: #1A8C97;
 }
+
 
 .file-name {
     font-size: .85rem;
@@ -163,7 +159,38 @@
     white-space: nowrap;
 }
 
+/* Layout: center + max width zoals home-secties */
+.contact-content{
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
+.contact-form,
+.contact-info{
+  background: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(15, 46, 78, 0.08);
+}
+
+@media (min-width: 900px){
+  .contact-content{
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    align-items: start;
+    gap: 2rem;
+    padding-top: 1.25rem;
+  }
+}
+
+.info-line{
+  border-bottom: 1px dashed #E2E8F0;
+  padding: .85rem 0;
+}
+.info-line:last-child{
+  border-bottom: none;
+}
 
 
 

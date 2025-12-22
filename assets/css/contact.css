@@ -1,5 +1,4 @@
 :root {
-    --font: "Montserrat", "Segoe UI", Arial, sans-serif;
     --bg-primary: #fff;
     --bg-secondary: #f4f4f4;
     --text-primary: #000000;
@@ -22,11 +21,20 @@ h2 {
     border-radius: 5px;
 }
 
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
     margin-top: 2rem;
+    width: 100%;
+    max-width: 100%;
 }
 
 .contact-form label {
@@ -38,6 +46,8 @@ h2 {
     padding: 0.5rem 0.8rem;
     border: 1px solid #ccc;
     font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .contact-form textarea {
@@ -60,6 +70,10 @@ h2 {
     }
 }
 
+.file-btn button {
+    background-color: #001830;
+}
+
 /* Contact Details */
 .contact-details div {
     display: flex;
@@ -71,4 +85,14 @@ h2 {
 
 .contact-details span {
     font-size: 0.9rem;
+}
+
+.file-upload-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.file-btn {
+    background-color: #001830;
 }

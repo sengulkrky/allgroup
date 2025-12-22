@@ -1,6 +1,5 @@
 :root {
     --bg-primary: #fff;
-    --bg-secondary: #02021;
     --bg-footer: #02021E;
     --text-primary: #000000;
     --text-secondary: #fff ;
@@ -135,12 +134,19 @@
     gap: 10px;
 }
 
+.wave-wrapper {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; /* voorkomt mini gaps */
+}
+
 .wave {
     display: block;
-    width: calc(100% + 2px);
-    margin-left: -1px;
-    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
 }
+
 
 /* Jobs Scroller */
 .jobs {
