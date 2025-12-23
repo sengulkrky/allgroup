@@ -91,13 +91,13 @@ main {
     padding: 48px 0 22px;
 }
 
-.services-hero h1 {
+.hero-content h1 {
     font-size: 2.1rem;
     color: var(--title);
     margin: 0 0 10px;
 }
 
-.services-hero p {
+.hero-content p {
     font-size: 1.05rem;
     line-height: 1.55;
     color: var(--text-secondary);
@@ -129,84 +129,7 @@ h2, h3 {
     color: var(--primary);
 }
 
-@media (min-width: 600px) {
-  .services-hero {
-    padding: 56px 0 28px;
-  }
 
-  .services-hero h1 {
-    font-size: 2.4rem;
-  }
-
-  .services-hero p {
-    font-size: 1.08rem;
-  }
-
-  .hero-img {
-    width: 65%;
-    padding-top: 28px;
-  }
-}
-
-@media (min-width: 768px) {
-  .services-hero .hero-content {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    column-gap: 32px;
-    align-items: center;
-  }
-
-  .services-hero .hero-img {
-    grid-column: 2;
-    grid-row: 1 / span 6;
-    width: 100%;
-    max-width: 420px;
-    padding-top: 0;
-    justify-self: end;
-  }
-
-  .hero-actions {
-    gap: 14px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .services-hero {
-    padding: 72px 0 34px;
-  }
-
-  .services-hero h1 {
-    font-size: 2.8rem;
-  }
-
-  .services-hero p {
-    font-size: 1.1rem;
-    max-width: 62ch;
-  }
-
-  .primary-btn,
-  .secondary-btn {
-    padding: 12px 18px;
-    font-size: 0.95rem;
-  }
-  .hero-img {
-    width: 55%;
-    max-width: 520px;
-    margin: 0 auto 10px;
-    display: block;
-  }
-}
-
-/* Grote desktops */
-@media (min-width: 1200px) {
-  .services-hero .hero-content {
-    column-gap: 48px;
-  }
-
-  .services-hero .hero-img {
-    max-width: 480px;
-  }
-}
 
 /* Buttons */
 .primary-btn,
@@ -352,6 +275,26 @@ footer {
     height: auto;
 }
 
+/* Media Queries */
+@media (min-width: 600px) {
+  .services-hero {
+    padding: 56px 0 28px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-content p {
+    font-size: 1.08rem;
+  }
+
+  .hero-img {
+    width: 65%;
+    padding-top: 28px;
+  }
+}
+
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
@@ -381,6 +324,26 @@ footer {
         &:hover {
             color: var(--accent);
         }
+    }
+
+    .services-hero .hero-content {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        column-gap: 32px;
+        align-items: center;
+    }
+
+    .services-hero .hero-img {
+        grid-column: 2;
+        grid-row: 1 / span 6;
+        width: 100%;
+        max-width: 420px;
+        padding-top: 0;
+        justify-self: end;
+    }
+
+    .hero-actions {
+        gap: 14px;
     }
 
     .footer-content {
@@ -422,19 +385,26 @@ footer {
     padding: 72px 0 34px;
   }
 
-  .services-hero h1 {
-    font-size: 2.8rem;
-  }
-
-  .services-hero p {
-    font-size: 1.1rem;
-    max-width: 62ch;
-  }
-
   .primary-btn,
   .secondary-btn {
     padding: 12px 18px;
     font-size: 0.95rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+    max-width: 62ch;
+  }
+
+  .hero-img {
+    width: 55%;
+    max-width: 520px;
+    margin: 0 auto 10px;
+    display: block;
   }
 }
 
