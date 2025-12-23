@@ -78,6 +78,10 @@ main {
     }
 }
 
+.nav a.active {
+    color: var(--accent);
+}
+
 .nav-menu-open {
     display: flex;
 }

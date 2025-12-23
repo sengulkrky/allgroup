@@ -1,7 +1,4 @@
-:root {
-
-}
-
+:root
 /* Hero */
 .hero {
     max-width: 90vw;
@@ -25,7 +22,7 @@
 .hero-title {
     color: var(--title);
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1;
     margin: 20px 0 0 0;
 }
@@ -39,19 +36,24 @@
     background-color: var(--accent);
     text-decoration: none;
     width: fit-content;
-    padding: 3px 10px 3px 3px;
+    padding: 5px 10px 5px 5px;
     margin-top: 40px;
     margin-bottom: 42px;
     border-radius: 10px;
     display: flex;
     align-items: baseline;
     gap: 5px;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 40px rgba(37, 174, 186, 0.32);
+    }
 }
 
 .btn-text {
     background-color: white;
     color: black;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     padding: 0px 5px;
     border-radius: 10px;
 }
@@ -206,21 +208,19 @@
 
 @media (min-width: 768px) {
   .hero{
-    max-width: 1200px;
-    padding-top: 80px;
-    text-align: left;
     display: flex;
+    align-items: center;
     gap: 2rem;
   }
 
   .hero-left {
-    display: inline;
+    flex: 1 1 50%;
   }
 
   .hero-right {
     display: inline;
-    width: 35vw;
-    height: auto;
+    flex: 0 0 50%;
+    max-width: 40vw;
     border-radius: 23% 77% 67% 33% / 30% 31% 69% 70% ;
     box-shadow: #25adba48 5px 5px, #41d0dd 10px 10px, #45d5e281 15px 15px;;
   }
@@ -234,6 +234,7 @@
     max-width: 60ch;
     font-size: 1.25rem;
   }
+
 
   .aboutus{
     padding: 0 40px;
