@@ -1,13 +1,10 @@
 :root {
-    --font: "Lato","Montserrat", Arial, sans-serif;
-    --bg-primary: #fff;
-    --bg-secondary: #F4F4F4;
-    --bg-footer: #02021E;
-    --text-primary: #000000;
-    --text-secondary: #fff ;
+    --font: "Montserrat", Arial, sans-serif;
+    --primary: #02021E;
+    --secondary: rgba(0, 24, 48, 0.06);
+    --text-secondary: rgba(0, 0, 0, 0.75);
     --text-footer: #c7c4c4;
     --accent: #25AEBA;
-    --accent-keywords: #001830;
 }
 
 * {
@@ -88,35 +85,6 @@ main {
     height: 45px;
 }
 
-@media (min-width: 768px) {
-
-    .toggle {
-        display: none; 
-    }
-
-    .nav {
-        display: block; 
-        position: static;
-        background: none;
-        box-shadow: none;
-        padding: 0;
-        width: auto;
-    }
-
-    .nav ul {
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .nav a {
-        font-size: 1rem;
-        
-        &:hover {
-            color: var(--accent);
-        }
-    }
-}
-
 /* Contact */
 .contact {
     width: 100%;
@@ -149,7 +117,7 @@ main {
 
 footer {
     width: 100%;
-    background-color: var(--bg-footer);
+    background-color: var(--primary);
     padding: 0;
     padding-bottom: 30px;
 }
@@ -172,7 +140,7 @@ footer {
 
 .footer-company {
     font-size: 1.6rem;
-    color: var(--text-secondary);
+    color: white;
 }
 
 .footer-nav ul {
@@ -209,3 +177,48 @@ footer {
     margin-left: -1px;
     overflow-x: hidden;
 }
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .nav {
+        display: block; 
+        position: static;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        width: auto;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .nav a {
+        font-size: 1rem;
+        
+        &:hover {
+            color: var(--accent);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
