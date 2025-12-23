@@ -173,8 +173,7 @@ footer {
 
 .layered-waves {
     display: block;
-    width: calc(100% + 2px);
-    margin-left: -1px;
+    width: 100vw;
     overflow-x: hidden;
 }
 

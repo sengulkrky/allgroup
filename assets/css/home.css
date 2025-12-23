@@ -1,5 +1,5 @@
 :root {
-    
+
 }
 
 /* Hero */
@@ -140,7 +140,7 @@
 .wave-wrapper {
     width: 100%;
     overflow: hidden;
-    line-height: 0; /* voorkomt mini gaps */
+    line-height: 0; 
 }
 
 .wave {
