@@ -22,6 +22,7 @@
 .intro-visual img {
     width: 100%;
     border-radius: 18px;
+    box-shadow: #25adba48 2px 2px, #41d0dd 5px 5px, #45d5e281 10px 10px;;
 }
 
 .intro-list {

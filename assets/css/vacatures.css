@@ -1,13 +1,4 @@
-:root {
-    --bg-primary: #fff;
-    --bg-secondary: #F4F4F4;
-    --bg-pill: #f0f0f0;
-    --text-primary: #000000;
-    --text-secondary: #fff;
-    --text-grey: #616161;
-    --accent: #25AEBA;
-    --accent-keywords: #001830;
-}
+:root
 
 .container {
     width: 90vw;

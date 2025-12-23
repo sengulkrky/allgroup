@@ -1,20 +1,8 @@
-:root {
-    --font: "Montserrat", "Segoe UI", Arial, sans-serif;
-    --bg-primary: #fff;
-    --bg-secondary: #F4F4F4;
-    --bg-footer: #02021E;
-    --text-primary: #000000;
-    --text-secondary: #fff ;
-    --text-footer: #c7c4c4;
-    --accent: #25AEBA;
-    --accent-keywords: #001830;
-}
-
 body {
     margin: 0;
     padding: 0;
-    background: #ffffff;
-    font-family: "Inter", sans-serif;
+    background: white;
+    font-family: "Montserrat", "Inter", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;

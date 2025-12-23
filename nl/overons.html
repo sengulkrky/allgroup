@@ -12,21 +12,23 @@
 </head>
 <body>
     <header class="header">
-        <div class="nav-left">
-            <a href="home.html"><img class="logo" src="../assets/images/logotext.png" alt="company logo"></a>
+        <div class="container header-inner">
+            <div class="nav-left">
+                <a href="home.html"><img class="logo" src="../assets/images/logotext.png" alt="company logo"></a>
+            </div>
+            <button type="button" class="toggle" id="toggle" aria-label="Open menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </button>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="diensten.html">Diensten</a></li>
+                    <li><a href="" class="active">Over ons</a></li>
+                    <li><a href="vacatures.html">Jobs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <button type="button" class="toggle" id="toggle" aria-label="Open menu">
-            <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </button>
-        <nav class="nav" id="nav">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="diensten.html">Diensten</a></li>
-                <li><a href="" class="active">Over ons</a></li>
-                <li><a href="vacatures.html">Jobs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section class="services-hero container">
@@ -39,7 +41,7 @@
                 </p>
                 <div class="hero-actions">
                     <a href="contact.html" class="primary-btn">Plan een gesprek</a>
-                    <a href="vacatures" class="secondary-btn">Bekijk vacatures</a>
+                    <a href="vacatures.html" class="secondary-btn">Bekijk vacatures</a>
                 </div>
                 <img src="../assets/images/about.svg" alt="" class="hero-img">
             </div>
@@ -119,7 +121,7 @@
                     Heb je vragen of wil je samen bekijken wat mogelijk is?
                     Neem gerust contact met ons op.
                 </p>
-                <a href="../nl/contact.html" class="contact-btn">Neem contact op</a>
+                <a href="contact.html" class="contact-btn">Neem contact op</a>
             </div>
         </section>
         <div class="footer-content">
