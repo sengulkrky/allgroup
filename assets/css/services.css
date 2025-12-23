@@ -2,70 +2,6 @@
     
 }
 
-/* Hero */
-.services-hero {
-    padding: 48px 0 22px;
-}
-
-.services-hero h1 {
-    font-size: 2.1rem;
-    color: var(--primary);
-    margin: 0 0 10px;
-}
-
-.services-hero p {
-    font-size: 1.05rem;
-    line-height: 1.55;
-    color: var(--text-secondary);
-}
-
-.hero-super {
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--primary);
-}
-
-.hero-img {
-    width: 80%;
-    padding-top: 30px;
-    display: block;
-    margin: auto;
-}
-
-
-/* Hero buttons */
-.hero-actions {
-    margin-top: 18px;
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-.primary-btn,
-.secondary-btn {
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    padding: 10px 14px;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.primary-btn {
-    background-color: var(--primary);
-    color: white;
-    border: 2px solid var(--primary);
-}
-
-.secondary-btn {
-    background-color: var(--secondary);
-    border: 2px solid rgba(0, 24, 48, 0.12);
-    color: var(--primary);
-}
-
 /* Services */
 .services-grid {
     display: grid;
@@ -147,24 +83,8 @@ h2, h3 {
     color: var(--primary);
 }
 
+/* MEDIA QUERIES*/
 @media (min-width: 600px) {
-  .services-hero {
-    padding: 56px 0 28px;
-  }
-
-  .services-hero h1 {
-    font-size: 2.4rem;
-  }
-
-  .services-hero p {
-    font-size: 1.08rem;
-  }
-
-  .hero-img {
-    width: 65%;
-    padding-top: 28px;
-  }
-
   .services-grid {
     gap: 18px;
   }
@@ -184,26 +104,6 @@ h2, h3 {
 }
 
 @media (min-width: 768px) {
-  .services-hero .hero-content {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    column-gap: 32px;
-    align-items: center;
-  }
-
-  .services-hero .hero-img {
-    grid-column: 2;
-    grid-row: 1 / span 6;
-    width: 100%;
-    max-width: 420px;
-    padding-top: 0;
-    justify-self: end;
-  }
-
-  .hero-actions {
-    gap: 14px;
-  }
-
   .services-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
@@ -225,25 +125,6 @@ h2, h3 {
 }
 
 @media (min-width: 1024px) {
-  .services-hero {
-    padding: 72px 0 34px;
-  }
-
-  .services-hero h1 {
-    font-size: 2.8rem;
-  }
-
-  .services-hero p {
-    font-size: 1.1rem;
-    max-width: 62ch;
-  }
-
-  .primary-btn,
-  .secondary-btn {
-    padding: 12px 18px;
-    font-size: 0.95rem;
-  }
-
   .services-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 22px;
@@ -271,16 +152,7 @@ h2, h3 {
   }
 }
 
-/* Grote desktops */
 @media (min-width: 1200px) {
-  .services-hero .hero-content {
-    column-gap: 48px;
-  }
-
-  .services-hero .hero-img {
-    max-width: 480px;
-  }
-
   .service-card {
     padding: 22px;
   }

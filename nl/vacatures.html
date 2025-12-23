@@ -6,8 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="../assets/css/home.css">
-    <link rel="stylesheet" href="../assets/css/jobs.css">
     <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/jobs.css">
     <title>Vacatures</title>
 </head>
 <body>
@@ -29,47 +29,61 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="hero-jobs">
+        <section class="services-hero container">
+            <span class="hero-super">All group consulting</span>
+            <div class="hero-content">
                 <h1>Op zoek naar een carrièreswitch?</h1>
-                <p>Bij All Group helpen we je graag groeien in een moderne, dynamische werkomgeving.
-                    Ontdek onze openstaande vacatures en zet vandaag nog de stap naar een nieuwe toekomst.
+                <p>
+                    All Group Consulting is gespecialiseerd in het verbinden van IT-professionals met uitdagende projecten bij organisaties.
+                    Wij geloven in een persoonlijke aanpak, korte communicatielijnen en duurzame samenwerkingen.
                 </p>
+                <p>
+                    Door rechtstreeks contact en gerichte opvolging zorgen wij voor een aanpak die efficiënt, transparant en betrouwbaar is.
+                </p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="primary-btn">Plan een gesprek</a>
+                    <a href="vacatures" class="secondary-btn">Bekijk vacatures</a>
+                </div>
+                <img src="../assets/images/services.svg" alt="" class="hero-img">
             </div>
-            <div class="cards">
-                <a href="vacature/job-1.html" class="card">
-                    <h2>Programmeur</h2>
-                    <span class="niveau">Ervaren</span>
-                    <span class="time">Full-time</span>
-                    <span class="remote">Thuiswerk</span>
-                    <p>Jij bouwt moderne, snelle en gebruiksvriendelijke interfaces.</p>
-                </a>
-                <a href="vacature/job-2.html" class="card">
-                    <h2>Projectleider</h2>
-                    <span class="niveau">Expert</span>
-                    <span class="time">Part-time</span>
-                    <p>Jij bouwt en onderhoudt performante systemen en API's.</p>
-                </a>
-                <a href="vacature/job-3.html" class="card">
-                    <h2>IT Support Medewerker</h2>
-                    <span class="niveau">Instap</span>
-                    <span class="time">Full-time</span>
-                    <p>Je helpt klanten met het oplossen van technische problemen.</p>
-                </a>
-                <a href="vacature/job-4.html" class="card">
-                    <h2>Business Analyst</h2>
-                    <span class="niveau">Expert</span>
-                    <span class="time">Part-time</span>
-                    <p>Jij bouwt en onderhoudt performante systemen en API's.</p>
-                </a>
-                <a href="vacature/job-5.html" class="card">
-                    <h2>Architect</h2>
-                    <span class="niveau">Expert</span>
-                    <span class="time">Part-time</span>
-                    <p>Jij bouwt en onderhoudt performante systemen en API's.</p>
-                </a>
+        </section>
+        <img src="../assets/images/wave-top.svg" alt="" class="wave">
+        </section>
+        <img src="../assets/images/wave-top.svg" alt="" class="wave">
+        <section class="jobs-section" id="jobs">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">openstaande vacatures</h2>
+                    <p class="section-subtitle">
+                        Filter op type, niveau of locatie.
+                    </p>
+                </div>
+                <div class="jobs-filter">
+                    <div class="filter">
+                        <label for="location">Locatie</label>
+                        <select id="location">
+                            <option>Alle locaties</option>
+                            <option>Brussel</option>
+                            <option>Antwerpen</option>
+                            <option>Gent</option>
+                            <option>Hybride</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <label for="type">Locatie</label>
+                        <select id="type">
+                            <option>Alle types</option>
+                            <option>Full-time</option>
+                            <option>Part-time</option>
+                            <option>Freelance</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="jobs-overview">
+
+                </div>
             </div>
-        </div>
+        </section>
         <img src="../assets/images/layered-waves-haikei.svg" class="layered-waves" alt="">
     </main>
     <footer>
@@ -85,15 +99,6 @@
         </section>
         <div class="footer-content">
             <div><img class="footer-logo" src="../assets/images/logo.png" alt=""></div>
-            <div class="footer-nav">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="diensten.html">Diensten</a></li>
-                    <li><a href="overons.html">Over ons</a></li>
-                    <li><a href="">Jobs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
             <div class="footer-copyright">&copy; 2025 All rights reserved</div>
         </div>
     </footer>
