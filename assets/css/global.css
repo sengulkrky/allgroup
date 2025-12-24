@@ -2,6 +2,7 @@
     --font: "Montserrat", Arial, sans-serif;
     --primary: #02021E;
     --secondary: rgba(0, 24, 48, 0.06);
+    --card-bg: rgba(255, 255, 255, 0.06);
     --title: #0f2e4e;
     --text-secondary: rgba(0, 0, 0, 0.75);
     --text-footer: #c7c4c4;
@@ -234,30 +235,6 @@ footer {
     font-size: 1.6rem;
     color: white;
 }
-
-/* Footer nav
-.footer-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 0.8rem;
-}
-
-.footer-nav a {
-    font-size: 1.1rem;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.08);
-    border-radius: 38px 38px 147px 38px;
-    padding: 0.6rem 3rem;
-    text-decoration: none;
-    color: var(--text-footer);
-}
-*/
 
 .footer-copyright {
     font-size: 1rem;

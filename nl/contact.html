@@ -7,104 +7,124 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/global.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <title>Contact</title>
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <title>Diensten</title>
 </head>
 <body>
     <header class="header">
-        <div class="nav-left">
-            <a href="home.html"><img class="logo" src="../assets/images/logotext.png" alt="company logo"></a>
-        </div>
-        <button type="button" class="toggle" id="toggle" aria-label="Open menu">
-            <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </button>
-        <nav class="nav" id="nav">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="diensten.html">Diensten</a></li>
-                <li><a href="overons.html">Over ons</a></li>
-                <li><a href="vacatures.html">Jobs</a></li>
-                <li><a href="" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="contact-hero">
-            <h1>Neem contact op</h1>
-            <p>Heb je vragen of wil je samenwerken? Wij horen graag van je.</p>
-        </section>
-        <section class="contact-content">
-            <form class="contact-form" action="/backend/contact/send-mail.php" method="POST" enctype="multipart/form-data">
-                <div class="field">
-                    <input type="text" id="name" name="name" placeholder=" " required>
-                    <label for="name">Naam</label>
-                </div>
-                <div class="field">
-                    <input type="email" id="email" name="email" placeholder=" " required>
-                    <label for="email">E-mailadres</label>
-                </div>
-                <div class="field textarea-field">
-                    <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
-                    <label for="message">Uw bericht</label>
-                </div>
-                <div class="file-field">
-                    <label for="cv">CV (PDF)</label>
-                    <div class="file-upload-wrapper">
-                        <input type="file" id="cv" name="cv" accept="application/pdf" required>
-                        <button type="button" class="file-btn">Upload PDF</button>
-                        <span class="file-name">Geen bestand gekozen</span>
-                    </div>
-                </div>
-                <div class="file-field">
-                    <label for="motivation">Motivatiebrief (PDF)</label>
-
-                    <div class="file-upload-wrapper">
-                        <input type="file" id="motivation" name="motivation" accept="application/pdf">
-                        <button type="button" class="file-btn">Upload PDF</button>
-                        <span class="file-name">Geen bestand gekozen</span>
-                    </div>
-                </div>
-                <button type="submit" class="send-btn">Verzenden</button>
-            </form>
-            <div class="contact-info">
-                <h2>Contactgegevens</h2>
-                <div class="info-line">
-                    <span class="info-icon">📍</span>
-                    <span>Rubensstraat 10, 1030 Schaarbeek</span>
-                </div>
-                <div class="info-line">
-                    <span class="info-icon">📞</span>
-                    <span>0472 09 56 53</span>
-                </div>
-                <div class="info-line">
-                    <span class="info-icon">✉️</span>
-                    <span>info@allgroup.be</span>
-                </div>
-                <div class="info-line">
-                    <span class="info-icon">🏢</span>
-                    <span>BTW BE 1008.336.279</span>
-                </div>
+        <div class="container header-inner">
+            <div class="nav-left">
+                <a href="home.html"><img class="logo" src="../assets/images/logotext.png" alt="company logo"></a>
             </div>
-        </section>
-        <img src="../assets/images/layered-waves-haikei.svg" class="layered-waves" alt="">
-    </main>
-    <footer>
-        <div class="footer-content">
-            <div><img class="footer-logo" src="../assets/images/logo.png" alt=""></div>
-            <div class="footer-nav">
+            <button type="button" class="toggle" id="toggle" aria-label="Open menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </button>
+            <nav class="nav" id="nav">
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="diensten.html">Diensten</a></li>
                     <li><a href="overons.html">Over ons</a></li>
-                    <li><a href="vacatures.html">Jobs</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="" class="active">Contact</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="services-hero container">
+            <span class="hero-super">All group consulting</span>
+            <div class="hero-content">
+                <h1>Neem contact op</h1>
+                <p>Heb je vragen of wil je samenwerken? Wij horen graag van je.</p>
+                <ul>
+                    <li>Je kan je CV en motivatiebrief als PDF toevoegen.</li>
+                    <li>We reageren meestal binnen 2 werkdagen.</li>
+                </ul>
+                <div class="hero-actions">
+                    <a href="#form" class="primary-btn">Contactformulier</a>
+                </div>
+                <img src="../assets/images/contact.svg" alt="" class="hero-img">
             </div>
+        </section>
+        <img src="../assets/images/wave-top.svg" alt="" class="wave">
+        <section id="form" class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h2>Stuur je bericht</h2>
+                        <form class="contact-form" action="#" method="post" enctype="multipart/form-data">
+                            <div class="field">
+                                <label for="name">Naam *</label>
+                                <input id="name" name="name" type="text" autocomplete="name" required placeholder="Voornaam + achternaam" />
+                            </div>
+                            <div class="field">
+                                <label for="email">E-mail *</label>
+                                <input id="email" name="email" type="email" autocomplete="email" required placeholder="naam@voorbeeld.be" />
+                            </div>
+                            <div class="field field-full">
+                                <label for="message">Bericht *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Waarmee kunnen we helpen?"></textarea>
+                            </div>
+                            <div class="field file-field">
+                                <label for="cv">CV (PDF)</label>
+                                <div class="file-row">
+                                    <input id="cv" name="cv" type="file" accept="application/pdf" />
+                                    <button class="file-remove secondary-btn" type="button" data-clear="cv" aria-label="Verwijder CV">Verwijderen</button>
+                                </div>
+                                <p class="file-hint" id="cv-hint">Nog geen bestand gekozen.</p>
+                            </div>
+                            <div class="field file-field">
+                                <label for="motivation">Motivatiebrief (PDF)</label>
+                                <div class="file-row">
+                                    <input id="motivation" name="motivation" type="file" accept="application/pdf" />
+                                    <button class="file-remove secondary-btn" type="button" data-clear="motivation" aria-label="Verwijder motivatiebrief">Verwijderen</button>
+                                </div>
+                                <p class="file-hint" id="motivation-hint">Nog geen bestand gekozen.</p>
+                            </div>
+                            <div class="actions">
+                                <button class="primary-btn" type="submit">Verzend</button>
+                            </div>
+                        </form>
+                    </div>
+                    <aside class="contact-side">
+                        <div class="contact-side-card">
+                            <h3>Tip</h3>
+                            <p>
+                            Voeg in je bericht gerust toe voor welke vacature je solliciteert en
+                            welke opzegtermijn je hebt. Dat versnelt het proces.
+                            </p>
+                        </div>
+                        <div class="contact-side-card">
+                            <h3>Privacy</h3>
+                            <p>Je gegevens worden enkel gebruikt om je aanvraag te verwerken.</p>
+                        </div>
+                        <div class="contact-side-card">
+                            <h3>Contactgegevens</h3>
+                            <div>
+                                <span>📞</span>
+                                <span>0472 09 56 53</span>
+                            </div>
+                            <div>
+                                <span>✉️</span>
+                                <span>info@allgroup.be</span>
+                            </div>
+                            <div>
+                                <span>🏢</span>
+                                <span>BTW BE 1008.336.279</span>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div><img class="footer-logo" src="../assets/images/logo.png" alt=""></div>
             <div class="footer-copyright">&copy; 2025 All rights reserved</div>
         </div>
     </footer>
 <script src="../assets/js/nav.js"></script>
-<script src="../assets/js/scroll.js"></script>
 <script src="../assets/js/filename.js"></script>
 </body>
 </html>
