@@ -194,6 +194,7 @@ h2, h3 {
 
 .contact-title {
     font-size: 1.2rem;
+    color: white;
 }
 
 .contact-subtext {
@@ -375,7 +376,6 @@ footer {
 
     .contact-title {
         font-size: 1.6rem;
-        color: white;
     }
 
     .contact-subtext {
