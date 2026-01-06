@@ -7,11 +7,9 @@ document.querySelectorAll('.file-upload-wrapper input').forEach(input => {
     });
 });
 
-// filename.js
 document.addEventListener("DOMContentLoaded", () => {
   const fileInputs = document.querySelectorAll('input[type="file"]');
 
-  // Update hint + enable/disable remove button
   function syncFileUI(inputEl) {
     const id = inputEl.id;
     const hintEl = document.getElementById(`${id}-hint`);
@@ -29,13 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // On change: show filename
   fileInputs.forEach((inputEl) => {
     inputEl.addEventListener("change", () => syncFileUI(inputEl));
-    syncFileUI(inputEl); // init state
+    syncFileUI(inputEl); 
   });
 
-  // On click "Verwijderen": clear file input
   document.addEventListener("click", (e) => {
     const btn = e.target.closest("button[data-clear]");
     if (!btn) return;
@@ -44,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const inputEl = document.getElementById(targetId);
     if (!inputEl) return;
 
-    inputEl.value = "";      // clears selected file
+    inputEl.value = "";      
     syncFileUI(inputEl);
   });
 });
