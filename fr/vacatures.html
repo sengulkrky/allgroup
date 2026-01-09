@@ -1,93 +1,154 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Amatic+SC:wght@400;700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/jobs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/jobs.css">
     <title>Vacatures</title>
 </head>
 <body>
     <header class="header">
-        <div class="nav-left">
-            <a href="accueil.html"><img class="logo" src="../assets/images/logo-consulting.png" alt="company logo"></a>
-        </div>
-        <button type="button" class="toggle" id="toggle" aria-label="Open menu">
-            <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </button>
-        <nav class="nav" id="nav">
-            <ul>
-                <li><a href="accueil.html">Home</a></li>
-                <li><a href="services.html">Diensten</a></li>
-                <li><a href="apropos.html">Over ons</a></li>
-                <li><a href="">Jobs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <div class="hero-jobs">
-                <h1>Op zoek naar een carrièreswitch?</h1>
-                <p>Bij All Group helpen we je graag groeien in een moderne, dynamische werkomgeving.
-                    Ontdek onze openstaande vacatures en zet vandaag nog de stap naar een nieuwe toekomst.
-                </p>
+        <div class="container header-inner">
+            <div class="nav-left">
+                <a href="accueil.html"><img class="logo" src="../assets/images/logotext.png" alt="company logo"></a>
             </div>
-            <div class="cards">
-                <a href="vacature/job-1.html" class="card">
-                    <h2>Programmeur</h2>
-                    <span class="niveau">Ervaren</span>
-                    <span class="time">Full-time</span>
-                    <span class="remote">Thuiswerk</span>
-                    <p>Jij bouwt moderne, snelle en gebruiksvriendelijke interfaces.</p>
-                </a>
-                <a href="vacature/job-2.html" class="card">
-                    <h2>Projectleider</h2>
-                    <span class="niveau">Expert</span>
-                    <span class="time">Part-time</span>
-                    <p>Jij bouwt en onderhoudt performante systemen en API's.</p>
-                </a>
-                <a href="vacature/job-3.html" class="card">
-                    <h2>IT Support Medewerker</h2>
-                    <span class="niveau">Instap</span>
-                    <span class="time">Full-time</span>
-                    <p>Je helpt klanten met het oplossen van technische problemen.</p>
-                </a>
-                <a href="vacature/job-4.html" class="card">
-                    <h2>Business Analyst</h2>
-                    <span class="niveau">Expert</span>
-                    <span class="time">Part-time</span>
-                    <p>Jij bouwt en onderhoudt performante systemen en API's.</p>
-                </a>
-                <a href="vacature/job-5.html" class="card">
-                    <h2>Architect</h2>
-                    <span class="niveau">Expert</span>
-                    <span class="time">Part-time</span>
-                    <p>Jij bouwt en onderhoudt performante systemen en API's.</p>
-                </a>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <div><img class="footer-logo" src="../assets/images/logo.png" alt=""></div>
-            <div class="footer-company">All Group Consulting</div>
-            <div class="footer-nav">
+            <button type="button" class="toggle" id="toggle" aria-label="Open menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </button>
+            <nav class="nav" id="nav">
                 <ul>
-                    <li><a href="accueil.html">Home</a></li>
-                    <li><a href="services.html">Diensten</a></li>
-                    <li><a href="apropos.html">Over ons</a></li>
-                    <li><a href="">Jobs</a></li>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="apropos.html">À propos de nous</a></li>
+                    <li><a href="" class="active">Emplois</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="services-hero container">
+            <span class="hero-super">All group consulting</span>
+            <div class="hero-content">
+                <h1>À la recherche d'un changement de carrière ?</h1>
+                <p>
+                    Nous ne faisons pas correspondre « un profil », mais une personne. Découvrez nos offres d'emploi ouvertes et voyez où vous pouvez faire la différence.
+                    Nous construisons de belles choses et vous êtes le bienvenu.
+                </p>
+                <div class="hero-actions">
+                    <a href="#vacatures" class="primary-btn">Offres</a>
+                    <a href="contact.html" class="secondary-btn">Candidature spontanée</a>
+                </div>
+                <img src="../assets/images/interview.svg" alt="" class="hero-img">
             </div>
-            <div class="footer-copyright">&copy; 2025 All rights reserved</div>
+        </section>
+        <img src="../assets/images/wave-top.svg" alt="" class="wave">
+        <section class="jobs-section" id="vacatures">
+            <div class="container">
+                <h2 class="section-title">Offres d'emploi ouvertes</h2>
+                <div class="jobs-overview">
+                    <div class="jobs-grid">
+                        <a href="vacatures/programmeur.html" class="job-card">
+                            <h3 class="job-card-title">Programmeur</h3>
+                            <p class="job-meta">Bruxelles · Temps plein</p>
+                            <div class="job-tags">
+                                <span class="tag">Expérimenté</span>
+                                <span class="tag tag-1">Frontend</span>
+                            </div>
+                            <p class="description">Vous construisez des interfaces modernes, rapides et conviviales.</p>
+                        </a>
+                        <a href="vacatures/projectleider.html" class="job-card">
+                            <h3 class="job-card-title">Chef de projet</h3>
+                            <p class="job-meta">Bruxelles · Temps plein</p>
+                            <div class="job-tags">
+                                <span class="tag">Expert</span>
+                                <span class="tag tag-1">Delivery</span>
+                            </div>
+                            <p class="description">Apporter de la structure, aligner les parties prenantes et faire avancer les équipes.</p>
+                        </a>
+                        <a href="vacatures/support-medewerker.html" class="job-card">
+                            <h3 class="job-card-title">Collaborateur Support IT</h3>
+                            <p class="job-meta">Bruxelles · Temps plein</p>
+                            <div class="job-tags">
+                                <span class="tag">Débutant</span>
+                                <span class="tag tag-1">Support</span>
+                            </div>
+                            <p class="description">Vous aidez les clients à résoudre des problèmes techniques.</p>
+                        </a>
+                        <a href="vacature/projectleider.html" class="job-card">
+                            <h3 class="job-card-title">Business Analyst</h3>
+                            <p class="job-meta">Bruxelles · Temps plein</p>
+                            <div class="job-tags">
+                                <span class="tag">Expert</span>
+                                <span class="tag tag-1">Analyse</span>
+                                <span class="tag tag-1">Impact</span>
+                            </div>
+                            <p class="description">Pont entre business et IT. Texte aléatoire : processus, exigences, et juste assez de post-it.</p>
+                        </a>
+                        <a href="vacature/projectleider.html" class="job-card">
+                            <h3 class="job-card-title">Incident Manager</h3>
+                            <p class="job-meta">Bruxelles · Temps plein</p>
+                            <div class="job-tags">
+                                <span class="tag">Expert</span>
+                                <span class="tag tag-1">Impact</span>
+                                <span class="tag tag-1">Stabilité</span>
+                            </div>
+                            <p class="description">Assurer que les incidents IT soient résolus rapidement et efficacement.
+                                Vous gardez une vue d'ensemble, dirigez les équipes lors des perturbations et communiquez clairement avec les parties prenantes.</p>
+                        </a>
+                        <a href="vacature/projectleider.html" class="job-card">
+                            <h3 class="job-card-title">Architecte IT</h3>
+                            <p class="job-meta">Bruxelles · Temps plein</p>
+                            <div class="job-tags">
+                                <span class="tag">Expert</span>
+                                <span class="tag tag-1">Cloud</span>
+                            </div>
+                            <p class="description">Concevez des solutions IT intelligentes qui ont un réel impact.
+                                Vous traduisez les besoins business en architectures évolutives et assurez la supervision de la vision technique.</p>
+                        </a>
+                    </div>
+                    <aside class="jobs-aside">
+                        <div class="aside-card">
+                            <h3>Pourquoi passer par All Group ?</h3>
+                            <p>Nous vous accompagnons personnellement, réfléchissons à votre croissance et recherchons des projets qui vous donnent de l’énergie.</p>
+                            <ul class="checklist">
+                                <li>Suivi personnalisé</li>
+                                <li>Formations &amp; certifications</li>
+                                <li>Package compétitif</li>
+                                <li>Projets avec impact</li>
+                            </ul>
+                        </div>
+                        <div class="aside-card">
+                            <h3>Pas de correspondance trouvée ?</h3>
+                            <p>Envoyez-nous volontiers une candidature spontanée. Parfois, votre rôle n'existe pas encore… jusqu'à ce que vous soyez là.</p>
+                            <a href="contact.html" class="aside-btn">Contactez-nous</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        <img src="../assets/images/layered-waves-haikei.svg" class="layered-waves" alt="">
+    </main>
+    <footer>
+        <section class="contact">
+            <div class="contact-content">
+                <h2 class="contact-title">Prêt à faire connaissance?</h2>
+                <p class="contact-subtext">
+                    Vous avez des questions ou souhaitez discuter de ce qui est possible ensemble?
+                    N'hésitez pas à nous contacter.
+                </p>
+                <a href="contact.html" class="contact-btn">Contactez-nous</a>
+            </div>
+        </section>
+        <div class="footer-content">
+            <div><img class="footer-logo" src="../assets/images/logo.png" alt=""></div>
+            <div class="footer-copyright">&copy; 2026 Tous droits réservés</div>
         </div>
     </footer>
 <script src="../assets/js/nav.js"></script>
-<script src="../assets/js/scroll.js"></script>
 </body>
 </html>

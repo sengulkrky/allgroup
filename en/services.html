@@ -5,47 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Amatic+SC:wght@400;700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
     <title>Services</title>
 </head>
 <body>
     <header class="header">
-        <div class="nav-left">
-            <a href="home.html"><img class="logo" src="../assets/images/logo-consulting.png" alt="company logo"></a>
-        </div>
-        <button type="button" class="toggle" id="toggle" aria-label="Open menu">
-            <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </button>
-        <nav class="nav" id="nav">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <div><img class="footer-logo" src="../assets/images/logo.png" alt=""></div>
-            <div class="footer-company">All Group Consulting</div>
-            <div class="footer-nav">
+        <div class="container header-inner">
+            <div class="nav-left">
+                <a href="home.html"><img class="logo" src="../assets/images/logotext.png" alt="company logo"></a>
+            </div>
+            <button type="button" class="toggle" id="toggle" aria-label="Open menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </button>
+            <nav class="nav" id="nav">
                 <ul>
                     <li><a href="home.html">Home</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="" class="active">Services</a></li>
                     <li><a href="aboutus.html">About us</a></li>
                     <li><a href="jobs.html">Jobs</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="services-hero container">
+            <span class="hero-super">All group consulting</span>
+            <div class="hero-content">
+                <h1>Our services</h1>
+                <p>
+                    All Group Consulting specializes in connecting IT professionals with challenging projects within organizations.
+                    We believe in a personalized approach, short communication lines, and long-term collaborations.
+                </p>
+                <p>
+                    Through direct contact and focused follow-up, we ensure an approach that is efficient, transparent, and reliable.
+                </p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="primary-btn">Schedule a meeting</a>
+                    <a href="jobs.html" class="secondary-btn">View vacancies</a>
+                </div>
+                <img src="../assets/images/services.svg" alt="" class="hero-img">
             </div>
-            <div class="footer-copyright">&copy; 2025 All rights reserved</div>
+        </section>
+        <img src="../assets/images/wave-top.svg" alt="" class="wave">
+        <section class="services-overview">
+            <div class="container">
+                <h2>How we help you</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <h3>IT Consultancy</h3>
+                        <div class="section-sub">
+                            <p>We support organizations by placing IT professionals in projects where their expertise can be utilized optimally.</p>
+                            <p>Our focus is on quality, commitment, and long-term collaborations.</p>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <h3>The Right Match</h3>
+                        <div class="section-sub">
+                            <p>
+                                A successful collaboration begins with the right match.
+                                That's why we look beyond just technical skills and experience.
+                            </p>
+                            <p>We consider:</p>
+                            <ul>
+                                <li>The content and context of the IT project</li>
+                                <li>The company culture</li>
+                                <li>The experience and ambitions of the IT professional</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <h3>A Strong Growth Package</h3>
+                        <div class="section-sub">
+                            <p>
+                                In addition to exciting projects, we offer IT professionals a transparent and attractive growth package.
+                                We invest in their professional development and well-being so they can fully focus on their work.
+                            </p>
+                            <p>The growth package includes:</p>
+                            <ul>
+                                <li>Competitive salary</li>
+                                <li>Training and certifications</li>
+                                <li>Insurance</li>
+                                <li>13th month pay</li>
+                                <li>Company car</li>
+                                <li>Personalized guidance</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="services-steps">
+            <div class="container">
+                <img src="../assets/images/scrum.svg" alt="" class="hero-img">
+                <h2>How We Work</h2>
+                <p>Our approach is simple and personal. In three clear steps we look together at which IT project fits you best.</p>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-nr">01</span>
+                        <div class="step-content">
+                            <h3>Fill out the contact form</h3>
+                            <p>Leave your information through the contact form and briefly tell us who you are and what you are looking for.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-nr">02</span>
+                        <div class="step-content">
+                            <h3>You will be contacted</h3>
+                            <p>After your request, we will personally contact you.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-nr">03</span>
+                        <div class="step-content">
+                            <h3>We look together at which project fits you</h3>
+                            <p>Together we review possible IT projects that align with your expertise and ambitions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img src="../assets/images/layered-waves-haikei.svg" class="layered-waves" alt="">
+    </main>
+    <footer>
+        <section class="contact">
+            <div class="contact-content">
+                <h2 class="contact-title">Ready to Meet?</h2>
+                <p class="contact-subtext">
+                    Do you have questions or want to explore what's possible together?
+                    Feel free to contact us.
+                </p>
+                <a href="contact.html" class="contact-btn">Contact us</a>
+            </div>
+        </section>
+        <div class="footer-content">
+            <div><img class="footer-logo" src="../assets/images/logo.png" alt=""></div>
+            <div class="footer-copyright">&copy; 2026 All rights reserved</div>
         </div>
     </footer>
 <script src="../assets/js/nav.js"></script>
-<script src="../assets/js/scroll.js"></script>
 </body>
 </html>

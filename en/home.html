@@ -5,74 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Amatic+SC:wght@400;700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
     <title>All Group Consulting</title>
 </head>
 <body>
     <header class="header">
-        <div class="nav-left">
-            <a href=""><img class="logo" src="../assets/images/logo-consulting.png" alt="company logo"></a>
-        </div>
-        <button type="button" class="toggle" id="toggle" aria-label="Open menu">
-            <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </button>
-        <nav class="nav" id="nav">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="hero">
-            <div class="hero-content">
-                <h1>Het juiste <span>project</span>, de juiste <span>begeleiding</span></h1>
+        <div class="container header-inner">
+            <div class="nav-left">
+                <a href="home.html"><img class="logo" src="../assets/images/logotext.png" alt="company logo"></a>
             </div>
-        </div>
-        <div class="keywords-band">
-            <ul class="keywords" id="keywords">
-                <li>Consultancy</li>
-                <li>Professionele groei</li>
-                <li>IT Consultancy</li>
-                <li>Carrièrebegeleiding</li>
-                <li>Opleidingen</li>
-            </ul>
-        </div>
-        <div class="home-content">
-            <div class="intro">
-                <h2 class="intro-title">Over All Group</h2>
-                <p><strong>Sinds 2008</strong> helpt All Group professionals om hun carrière uit te bouwen binnen uitdagende projecten bij toonaangevende bedrijven.
-                    Als <strong>consultancy-partner</strong> geloven we in duurzame groei, zowel voor onze klanten als voor onze mensen.
-                </p>
-                <h2 class="intro-title">Groeien bij All Group</h2>
-                <p>Met ons uitgebreid <strong>groeipakket</strong> bieden we meer dan alleen een job: een competitief loon, verzekeringen, <strong>opleidingen</strong>,
-                    een 13e maand en continue ondersteuning. Of je nu net afgestudeerd bent of al ervaring hebt: bij ons krijg je de kans jezelf te ontwikkelen, bij te leren
-                    en door te <strong>groeien</strong> binnen diverse technische en digitale omgevingen.
-                </p>
-            </div>
-            <div class="content-services"></div>
-            <div class="content-jobs"></div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <div><img class="footer-logo" src="../assets/images/logo.png" alt=""></div>
-            <div class="footer-company">All Group Consulting</div>
-            <div class="footer-nav">
+            <button type="button" class="toggle" id="toggle" aria-label="Open menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </button>
+            <nav class="nav" id="nav">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="" class="active">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="aboutus.html">About us</a></li>
                     <li><a href="jobs.html">Jobs</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-left">
+                <h1 class="hero-title">Your carreer,<br>Our Expertise</h1>
+                <p class="hero-subtext">
+                    We connect talented professionals with challenging IT projects at leading organizations.
+                    With personalized guidance and a strong growth package, we build sustainable careers together.
+                </p>
+                <a href="jobs.html" class="apply-btn">
+                    <div class="btn-text">Apply now</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><polygon points="11.293 4.707 17.586 11 4 11 4 13 17.586 13 11.293 19.293 12.707 20.707 21.414 12 12.707 3.293 11.293 4.707"/></svg>
+                </a>
             </div>
-            <div class="footer-copyright">&copy; 2025 All rights reserved</div>
+            <img src="../assets/images/hero.jpg" alt="" class="hero-right">
+        </section>
+        <img src="../assets/images/wave-top.svg" alt="" class="wave">
+        <section class="aboutus">
+            <div class="aboutus-section">
+                <img src="../assets/images/about.svg" alt="">
+                <div>
+                    <h2 class="aboutus-title"><a href="overons.html">More than just consulting &rarr;</a></h2>
+                    <p class="aboutus-subtext">
+                        All Group Consulting is an IT consulting company that has been supporting professionals in their carreers since 2008.
+                        We don't just place people in projects — we look for the right match, both technically and personally.
+                    </p>
+                    <p>
+                        We believe in long-term collaborations, transparent communication, and personalized follow-up.
+                    </p>
+                </div>
+            </div>
+            <div class="aboutus-section">
+                <img src="../assets/images/services.svg" alt="">
+                <div>
+                    <h2><a href="diensten.html">Our expertise &rarr;</a></h2>
+                    <div class="aboutus-cards">
+                        <div class="aboutus-card">
+                            <h3>Consulting</h3>
+                            <p>We connect companies with the right profiles: from developers and analysts to project managers and architects.</p>
+                        </div>
+                        <div class="aboutus-card">
+                            <h3>Project &amp; Delivery Management</h3>
+                            <p>Structure, planning, and guidance to successfully deliver digital projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutus-section">
+                <img src="../assets/images/team.svg" alt="">
+                <div>
+                    <h2 class="aboutus-title">Build your future</h2>
+                    <p class="aboutus-subtext">
+                        At All Group Consulting, you have room to grow. Whether you've just graduated or already have experience, we guide you to projects that fit your ambitions.
+                    </p>
+                    <div class="aboutus-cards">
+                        <div class="aboutus-card">
+                            <h3>Growth Package</h3>
+                            <ul>
+                                <li>Competitive salary</li>
+                                <li>Training</li>
+                                <li>Insurance</li>
+                                <li>13th month</li>
+                                <li>Company car</li>
+                                <li>Personalized guidance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="jobs-btn">
+                        <a href="jobs.html">Discover our vacancies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutus-section">
+                <img src="../assets/images/choose.svg" alt="">
+                <div>
+                    <h2 class="aboutus-title">Why All Group Consulting?</h2>
+                    <div class="why-item">
+                        <div class="why-item-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 320Zm0-400Z"/></svg>
+                            <h3>Personalized Approach</h3>
+                        </div>
+                        <p>One point of contact, clear communication, and tailored follow-up.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-item-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="M240-40v-329L110-580l185-300h370l185 300-130 211v329l-240-80-240 80Zm80-111 160-53 160 53v-129H320v129Zm20-649L204-580l136 220h280l136-220-136-220H340Zm98 383L296-558l57-57 85 85 169-170 57 56-226 227ZM320-280h320-320Z"/></svg>
+                            <h3>Experience since 2008</h3>
+                        </div>
+                        <p>More than 15 years of experience in IT consulting and project delivery.</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-item-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="M475-160q4 0 8-2t6-4l328-328q12-12 17.5-27t5.5-30q0-16-5.5-30.5T817-607L647-777q-11-12-25.5-17.5T591-800q-15 0-30 5.5T534-777l-11 11 74 75q15 14 22 32t7 38q0 42-28.5 70.5T527-522q-20 0-38.5-7T456-550l-75-74-175 175q-3 3-4.5 6.5T200-435q0 8 6 14.5t14 6.5q4 0 8-2t6-4l136-136 56 56-135 136q-3 3-4.5 6.5T285-350q0 8 6 14t14 6q4 0 8-2t6-4l136-135 56 56-135 136q-3 2-4.5 6t-1.5 8q0 8 6 14t14 6q4 0 7.5-1.5t6.5-4.5l136-135 56 56-136 136q-3 3-4.5 6.5T454-180q0 8 6.5 14t14.5 6Zm-1 80q-37 0-65.5-24.5T375-166q-34-5-57-28t-28-57q-34-5-56.5-28.5T206-336q-38-5-62-33t-24-66q0-20 7.5-38.5T149-506l232-231 131 131q2 3 6 4.5t8 1.5q9 0 15-5.5t6-14.5q0-4-1.5-8t-4.5-6L398-777q-11-12-25.5-17.5T342-800q-15 0-30 5.5T285-777L144-635q-9 9-15 21t-8 24q-2 12 0 24.5t8 23.5l-58 58q-17-23-25-50.5T40-590q2-28 14-54.5T87-692l141-141q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l11 11 11-11q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l169 169q23 23 35 53t12 61q0 31-12 60.5T873-437L545-110q-14 14-32.5 22T474-80Zm-99-560Z"/></svg>
+                            <h3>Sustainable Collaborations</h3>
+                        </div>
+                        <p>We think long-term, for both our professionals and our clients.</p>
+                    </div>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </section>
+        <div class="wave-wrapper"><img src="../assets/images/wave-bottom.svg" alt="" class="wave"></div>
+        <section class="jobs">
+            <h2 class="title">Looking for a new challenge?</h2>
+            <p class="subtext">We are continuously looking for motivated professionals who want to work on exciting IT projects.</p>
+            <div class="jobs-scroller">
+                <a href="vacatures/programmeur.html" class="jobs-card">
+                    <h3>Programmer</h3>
+                    <p class="job-meta">Brussels - Full-time</p>
+                </a>
+                <a href="vacatures/projectleider.html" class="jobs-card">
+                    <h3>Project Leader</h3>
+                    <p class="job-meta">Brussels - Full-time</p>
+                </a>
+                <a href="vacatures/support-medewerker.html" class="jobs-card">
+                    <h3>IT Support</h3>
+                    <p class="job-meta">Brussels - Full-time</p>
+                </a>
+                <a href="jobs.html" class="jobs-card jobs-card-btn">
+                    <span>View all vacancies</span>
+                </a>
+            </div>
+        </section>
+        <img src="../assets/images/layered-waves-haikei.svg" class="layered-waves" alt="">
+    </main>
+    <footer>
+        <section class="contact">
+            <div class="contact-content">
+                <h2 class="contact-title">Ready to meet?</h2>
+                <p class="contact-subtext">
+                    Do you have questions or want to see what's possible together?
+                    Feel free to contact us.
+                </p>
+                <a href="contact.html" class="contact-btn">Contact us</a>
+            </div>
+        </section>
+        <div class="footer-content">
+            <div><img class="footer-logo" src="../assets/images/logo.png" alt=""></div>
+            <div class="footer-copyright">&copy; 2026 All rights reserved</div>
         </div>
     </footer>
 <script src="../assets/js/nav.js"></script>

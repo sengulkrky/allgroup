@@ -1,51 +1,150 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Amatic+SC:wght@400;700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/global.css">
-    <title>Diensten</title>
+    <link rel="stylesheet" href="../assets/css/services.css">
+    <title>Services</title>
 </head>
 <body>
     <header class="header">
-        <div class="nav-left">
-            <a href="accueil.html"><img class="logo" src="../assets/images/logo-consulting.png" alt="company logo"></a>
-        </div>
-        <button type="button" class="toggle" id="toggle" aria-label="Open menu">
-            <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </button>
-        <nav class="nav" id="nav">
-            <ul>
-                <li><a href="accueil.html">Home</a></li>
-                <li><a href="">Diensten</a></li>
-                <li><a href="apropos.html">Over ons</a></li>
-                <li><a href="vacatures.html">Jobs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <div><img class="footer-logo" src="../assets/images/logo.png" alt=""></div>
-            <div class="footer-company">All Group Consulting</div>
-            <div class="footer-nav">
+        <div class="container header-inner">
+            <div class="nav-left">
+                <a href="home.html"><img class="logo" src="../assets/images/logotext.png" alt="company logo"></a>
+            </div>
+            <button type="button" class="toggle" id="toggle" aria-label="Open menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </button>
+            <nav class="nav" id="nav">
                 <ul>
-                    <li><a href="accueil.html">Home</a></li>
-                    <li><a href="">Diensten</a></li>
-                    <li><a href="apropos.html">Over ons</a></li>
-                    <li><a href="vacatures.html">Jobs</a></li>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="" class="active">Services</a></li>
+                    <li><a href="apropos.html">À propos de nous</a></li>
+                    <li><a href="vacatures.html">Emplois</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="services-hero container">
+            <span class="hero-super">All group consulting</span>
+            <div class="hero-content">
+                <h1>Nos services</h1>
+                <p>
+                    All Group Consulting est spécialisé dans la mise en relation de professionnels IT avec des projets stimulants au sein d'organisations.
+                    Nous croyons en une approche personnalisée, des voies de communication courtes et des collaborations durables.
+                </p>
+                <p>
+                    Par un contact direct et un suivi ciblé, nous assurons une approche efficace, transparente et fiable.
+                </p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="primary-btn">Planifier un entretien</a>
+                    <a href="jobs.html" class="secondary-btn">Voir les offres</a>
+                </div>
+                <img src="../assets/images/services.svg" alt="" class="hero-img">
             </div>
-            <div class="footer-copyright">&copy; 2025 All rights reserved</div>
+        </section>
+        <img src="../assets/images/wave-top.svg" alt="" class="wave">
+        <section class="services-overview">
+            <div class="container">
+                <h2>Comment nous vous aidons</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <h3>Consultance IT</h3>
+                        <div class="section-sub">
+                            <p>Nous aidons les organisations en plaçant des professionnels IT dans des projets où leur expertise peut pleinement s'exprimer.</p>
+                            <p>Notre focus est mis sur la qualité, l'engagement et des collaborations à long terme.</p>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <h3>La bonne adéquation</h3>
+                        <div class="section-sub">
+                            <p>
+                                Une collaboration réussie commence par la bonne adéquation.
+                                C'est pourquoi nous regardons au-delà des seules compétences techniques et de l'expérience.
+                            </p>
+                            <p>Nous tenons compte de:</p>
+                            <ul>
+                                <li>Le contenu et le contexte du projet IT</li>
+                                <li>La culture de l'entreprise</li>
+                                <li>L'expérience et les ambitions du professionnel IT</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <h3>Un solide package de croissance</h3>
+                        <div class="section-sub">
+                            <p>
+                                En plus de projets intéressants, nous offrons aux professionnels IT un package de croissance transparent et attractif.
+                                Nous investissons dans leur développement professionnel et leur bien-être afin qu'ils puissent se concentrer pleinement sur leur travail.
+                            </p>
+                            <p>Le package de croissance inclut notamment:</p>
+                            <ul>
+                                <li>Salaire compétitif</li>
+                                <li>Formations et certifications</li>
+                                <li>Assurances</li>
+                                <li>13e mois</li>
+                                <li>Voiture de société</li>
+                                <li>Accompagnement personnalisé</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="services-steps">
+            <div class="container">
+                <img src="../assets/images/scrum.svg" alt="" class="hero-img">
+                <h2>Comment nous travaillons</h2>
+                <p>Notre approche est simple et personnelle. En trois étapes claires, nous examinons ensemble quel projet IT vous convient le mieux.</p>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-nr">01</span>
+                        <div class="step-content">
+                            <h3>Remplissez le formulaire de contact</h3>
+                            <p>Laissez vos coordonnées via le formulaire de contact et dites-nous brièvement qui vous êtes et ce que vous recherchez.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-nr">02</span>
+                        <div class="step-content">
+                            <h3>Vous serez contacté</h3>
+                            <p>Après votre demande, nous prendrons personnellement contact avec vous.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-nr">03</span>
+                        <div class="step-content">
+                            <h3>Nous voyons ensemble quel projet vous convient</h3>
+                            <p>Ensemble, nous passons en revue les projets IT possibles qui correspondent à votre expertise et à vos ambitions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img src="../assets/images/layered-waves-haikei.svg" class="layered-waves" alt="">
+    </main>
+    <footer>
+        <section class="contact">
+            <div class="contact-content">
+                <h2 class="contact-title">Prêt à faire connaissance?</h2>
+                <p class="contact-subtext">
+                    Avez-vous des questions ou souhaitez-vous voir ce qui est possible ensemble?
+                    N'hésitez pas à nous contacter.
+                </p>
+                <a href="contact.html" class="contact-btn">Contactez-nous</a>
+            </div>
+        </section>
+        <div class="footer-content">
+            <div><img class="footer-logo" src="../assets/images/logo.png" alt=""></div>
+            <div class="footer-copyright">&copy; 2026 Tous droits réservés</div>
         </div>
     </footer>
 <script src="../assets/js/nav.js"></script>
-<script src="../assets/js/scroll.js"></script>
 </body>
 </html>

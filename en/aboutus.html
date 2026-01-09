@@ -5,47 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Amatic+SC:wght@400;700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/aboutus.css">
     <title>About us</title>
 </head>
 <body>
     <header class="header">
-        <div class="nav-left">
-            <a href="home.html"><img class="logo" src="../assets/images/logo-consulting.png" alt="company logo"></a>
-        </div>
-        <button type="button" class="toggle" id="toggle" aria-label="Open menu">
-            <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </button>
-        <nav class="nav" id="nav">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <div><img class="footer-logo" src="../assets/images/logo.png" alt=""></div>
-            <div class="footer-company">All Group Consulting</div>
-            <div class="footer-nav">
+        <div class="container header-inner">
+            <div class="nav-left">
+                <a href="home.html"><img class="logo" src="../assets/images/logotext.png" alt="company logo"></a>
+            </div>
+            <button type="button" class="toggle" id="toggle" aria-label="Open menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#0F2E4E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </button>
+            <nav class="nav" id="nav">
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="">About us</a></li>
+                    <li><a href="" class="active">About us</a></li>
                     <li><a href="jobs.html">Jobs</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="services-hero container">
+            <span class="hero-super">All group consulting</span>
+            <div class="hero-content">
+                <h1>About us</h1>
+                <p>
+                    All Group Consulting is an IT service provider specialized in guiding and placing IT professionals on projects within organizations.
+                    We help organizations and IT professionals move forward.
+                </p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="primary-btn">Schedule a meeting</a>
+                    <a href="jobs.html" class="secondary-btn">View vacancies</a>
+                </div>
+                <img src="../assets/images/about.svg" alt="" class="hero-img">
             </div>
-            <div class="footer-copyright">&copy; 2025 All rights reserved</div>
+        </section>
+        <img src="../assets/images/wave-top.svg" alt="" class="wave">
+        <section class="about-intro">
+            <div class="container intro-content">
+                <div class="intro-text">
+                    <h2>Who we are</h2>
+                    <p>All Group Consulting was born from the idea that consulting can be human too.
+                        We combine expertise with a healthy dose of pragmatism and focus on guidance that truly works.
+                    </p>
+                    <p>We believe in clear agreements, short communication lines, and an approach you can explain to your colleagues without a PowerPoint circus.</p>
+                    <div class="intro-list">
+                        <div class="list-item">
+                            <span class="dot" aria-hidden="true"></span>
+                            <div>
+                                <h3>Transparent</h3>
+                                <p>No surprises: scope, expectations, and agreements are always clear.</p>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <span class="dot" aria-hidden="true"></span>
+                            <div>
+                                <h3>Personal</h3>
+                                <p>One point of contact, fast feedback, and follow-up you can feel.</p>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <span class="dot" aria-hidden="true"></span>
+                            <div>
+                                <h3>Pragmatic</h3>
+                                <p>We'd rather deliver something useful today than something perfect “someday.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-visual container" aria-hidden="true">
+                    <img src="../assets/images/computer.jpg" alt="" class="intro-img">
+                </div>
+            </div>
+        </section>
+        <img src="../assets/images/wave-bottom.svg" alt="" class="wave">
+        <section class="values">
+            <div class="container">
+                <h2>What we stand for</h2>
+                <p class="values-subtext">
+                    Our values aren't meant to hang on a wall, but to make decisions.
+                </p>
+                <div class="values-grid">
+                    <article class="value-card">
+                        <svg class="value-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M185-80q-17 0-29.5-12.5T143-122v-105q0-90 56-159t144-88q-40 28-62 70.5T259-312v190q0 11 3 22t10 20h-87Zm147 0q-17 0-29.5-12.5T290-122v-190q0-70 49.5-119T459-480h189q70 0 119 49t49 119v64q0 70-49 119T648-80H332Zm148-484q-66 0-112-46t-46-112q0-66 46-112t112-46q66 0 112 46t46 112q0 66-46 112t-112 46Z"/></svg>
+                        <h3>Ownership</h3>
+                        <p>We take responsibility and communicate early. No “we'll see.”</p>
+                    </article>
+                    <article class="value-card">
+                        <svg class="value-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m136-240-56-56 296-298 160 160 208-206H640v-80h240v240h-80v-104L536-320 376-480 136-240Z"/></svg>
+                        <h3>Growth</h3>
+                        <p>We invest in people: feedback, coaching, and time to keep learning.</p>
+                    </article>
+                    <article class="value-card">
+                        <svg class="value-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                        <h3>Quality</h3>
+                        <p>We keep it sharp, simple, and maintainable.</p>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+        <img src="../assets/images/layered-waves-haikei.svg" class="layered-waves" alt="">
+    </main>
+    <footer>
+        <section class="contact">
+            <div class="contact-content">
+                <h2 class="contact-title">Ready to meet?</h2>
+                <p class="contact-subtext">
+                    Do you have questions or want to see what's possible together?
+                    Feel free to contact us.
+                </p>
+                <a href="contact.html" class="contact-btn">Contact us</a>
+            </div>
+        </section>
+        <div class="footer-content">
+            <div><img class="footer-logo" src="../assets/images/logo.png" alt=""></div>
+            <div class="footer-copyright">&copy; 2026 All rights reserved</div>
         </div>
     </footer>
 <script src="../assets/js/nav.js"></script>
-<script src="../assets/js/scroll.js"></script>
 </body>
 </html>

@@ -142,6 +142,10 @@
     margin: 0;
 }
 
+.why-item h3 {
+  color: white;
+}
+
 .why-item-title {
     display: flex;
     align-items: center;
