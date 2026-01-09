@@ -78,6 +78,11 @@
     text-decoration: none;
 }
 
+.aboutus-section h2 {
+    font-size: 1.3rem;
+    color: var(--accent);
+}
+
 .aboutus-section p {
     font-size: 1.2rem;
     font-weight: 300;

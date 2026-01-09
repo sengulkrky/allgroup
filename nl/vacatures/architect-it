@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../../assets/css/global.css">
     <link rel="stylesheet" href="../../assets/css/vacatures.css">
-    <title>All Group Consulting</title>
+    <title>Architect IT</title>
 </head>
 <body>
     <header class="header">
@@ -24,7 +24,7 @@
                     <li><a href="../home.html">Home</a></li>
                     <li><a href="../diensten.html">Diensten</a></li>
                     <li><a href="../overons.html">Over ons</a></li>
-                    <li><a href="../vacatures.html">Jobs</a></li>
+                    <li><a href="../jobs.html">Jobs</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -33,35 +33,34 @@
     <main>
         <section class="job-hero container">
             <div class="job-hero-left">
-                <h1>Projectleider</h1>
+                <h1>Architect IT</h1>
                 <p>
-                    Als projectleider neem je de lead over projecten van A tot Z.
-                    Je bewaakt scope, timing en budget, brengt de juiste mensen samen en zorgt dat alles vlot en transparant loopt.
-                    Je bent het aanspreekpunt voor klanten én interne stakeholders en je houdt het overzicht zonder de details te verliezen.
+                    Als IT architect ontwerp je de structuur en samenhang van IT-oplossingen binnen de organisatie.
+                    Je vertaalt strategische doelstellingen en businessbehoeften naar duurzame en schaalbare IT-architecturen.
                 </p>
                 <p>
-                    Je komt terecht in een team waar verantwoordelijkheid en vertrouwen centraal staan:
-                    jij krijgt de ruimte om te sturen, te verbeteren en impact te maken.
+                    Je werkt samen met ontwikkelaars, analisten en andere IT-specialisten in een professionele en kennisgedreven omgeving. 
+                    Samen zorgen jullie voor coherente oplossingen die aansluiten bij de lange termijnvisie.
                 </p>
                 <div class="tags">
                     <span class="tag">Brussel</span>
-                    <span class="tag">Part-time</span>
+                    <span class="tag">Full-time</span>
                     <span class="tag">Competitief</span>
                 </div>
                 <div class="hero-actions">
-                    <a href="contact.html" class="primary-btn">Solliciteer nu</a>
-                    <a href="vacatures.html" class="secondary-btn">Kopieer link</a>
+                    <a href="../contact.html" class="primary-btn">Solliciteer nu</a>
+                    <a href="../vacatures.html" class="secondary-btn">Kopieer link</a>
                 </div>
             </div>
             <div class="job-hero-right">
                 <h2 class="short">In het kort</h2>
                 <div class="row">
                     <span>Niveau</span>
-                    <span>Expert</span>
+                    <span>Ervaren</span>
                 </div>
                 <div class="row">
                     <span>Team</span>
-                    <span>Delivery</span>
+                    <span>Architect</span>
                 </div>
                 <div class="row">
                     <span>Start</span>
@@ -75,21 +74,21 @@
                 <div class="detail tasks">
                     <h2>Jouw takenpakket</h2>
                     <ul>
-                        <li>IT-projecten leiden van initiatie tot oplevering</li>
-                        <li>Planning, budget en scope bewaken</li>
-                        <li>Afstemmen met interne stakeholders</li>
-                        <li>Vertalen van businesswensen naar concrete IT-oplossingen</li>
-                        <li>Rapporteren van voortgang, kwaliteit en resultaten</li>
+                        <li>Ontwerpen en bewaken van IT-architecturen</li>
+                        <li>Vertalen van business- en technische vereisten naar oplossingen</li>
+                        <li>Afstemmen met verschillende IT- en projectteams</li>
+                        <li>Evalueren en adviseren over technologieën en standaarden</li>
+                        <li>Bewaken van kwaliteit, samenhang en toekomstbestendigheid</li>
                     </ul>
                 </div>
                 <div class="detail skills">
                     <h2>Ben jij wie we zoeken?</h2>
                     <ul>
-                        <li>Bachelor of gelijkwaardig door ervaring</li>
-                        <li>Minimaal 3 jaar ervaring als IT-projectleider</li>
-                        <li>Sterke communicatieve en organisatorische vaardigheden</li>
-                        <li>Analytisch, gestructureerd en resultaatgericht</li>
-                        <li>Goede beheersing van de Nederlandse en Engelse taal</li>
+                        <li>Je denkt conceptueel en strategisch</li>
+                        <li>Je hebt een brede kijk op IT-oplossingen en systemen</li>
+                        <li>Je communiceert vlot met technische en niet-technische stakeholders</li>
+                        <li>Je werkt gestructureerd en kwaliteitsgericht</li>
+                        <li>Je volgt technologische evoluties actief op</li>
                     </ul>
                 </div>
                 <div class="detail offer">
@@ -129,7 +128,7 @@
                     <h3>Contactgegevens</h3>
                     <div class="info-line">
                         <span class="info-icon">📞</span>
-                        <span>0472 09 56 53</span>
+                        <span>0491 91 73 15</span>
                     </div>
                     <div class="info-line">
                         <span class="info-icon">✉️</span>
@@ -153,7 +152,7 @@
         </section>
         <div class="footer-content">
             <div><img class="footer-logo" src="../../assets/images/logo.png" alt=""></div>
-            <div class="footer-copyright">&copy; 2025 All rights reserved</div>
+            <div class="footer-copyright">&copy; 2026 All rights reserved</div>
         </div>
     </footer>
 <script src="../../assets/js/nav.js"></script>
