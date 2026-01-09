@@ -110,18 +110,14 @@ main {
 .lang-switch {
     width: 100%;
     max-width: 100px;
-    padding: 5px 10px;
-    border: 1px solid #00000020;
-    border-radius: 10px;
-    background-color: #25adbab2;
     color: #0f2e4e;
-    font-family: var(--font);
-    font-size: 1.2rem;
     list-style: none;
 }
 
 .lang-select {
     border-radius: 5px;
+    font-size: 1.2rem;
+    color: #0f2e4e;
 }
 
 /* Hero about us, services, contact, jobs */
@@ -355,6 +351,7 @@ footer {
 
     .lang-select {
         padding: 6px 10px;
+        font-size: 1rem;
     }    
 
     .services-hero .hero-content {
